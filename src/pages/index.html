@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../../fontAW-6/css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid grid-cols-12 gap-5 w-full bg-white px-4 pt-4">
+        <!-- slider -->
+        <div class="absolute overflow-hidden h-[80vh] top-0 bottom-0 left-0 right-0">
+            <div class="bg-black absolute top-0 bottom-0 left-0 right-0 z-10 opacity-50"></div>
+            <div class="absolute left-0 right-0 top-0 z-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="../images/hero_bg_2.jpg">
+            </div>
+        </div>
+        <!-- slider -->
+
+        <!-- mobile menu -->
+        <div class=" absolute md:hidden">
+            <div class="fixed top-0 left-0 bottom-0 bg-slate-800 right-0 opacity-70 z-30 overlay hidden"></div>
+        </div>
+        <div class="w-[40%] h-screen bg-slate-600 z-30 right-0 top-0 fixed translate-x-[100%] mobile-menu md:hidden">
+            <div class="w-14 h-14 grid place-content-center text-white cursor-pointer close">
+                <i class="fa-solid fa-xmark text-2xl hover:scale-110 transition active:scale-125 active:text-[gray]"></i>
+            </div>
+            <div class="w-full flex flex-col gap-4 px-6 pt-16">
+                <div class="hover:bg-[#015557] hover:text-white py-4 cursor-pointer px-4">Home</div>
+                <div class="hover:bg-[#015557] hover:text-white py-4 cursor-pointer px-4 flex flex-col mobile-menu-dropdown">
+                    <div>Properties<i class="fa-sharp fa-solid fa-chevron-down text-[12px] pl-2"></i></div>
+                    <div class="bg-[#015557] hidden text-white py-6 w-full mobile-sub-menu">
+                        <div class="hover:bg-white hover:text-[#333] py-4 px-8 w-full">something</div>
+                        <div class="hover:bg-white hover:text-[#333] py-4 px-8 w-full">something</div>
+                        <div class="hover:bg-white hover:text-[#333] py-4 px-8 w-full">something</div>
+                        <div class="hover:bg-white hover:text-[#333] py-4 px-8 w-full">something</div>
+                    </div>
+                </div>
+                <div class="hover:bg-[#015557] hover:text-white py-4 cursor-pointer px-4">Service</div>
+                <div class="hover:bg-[#015557] hover:text-white py-4 cursor-pointer px-4">About</div>
+                <div class="hover:bg-[#015557] hover:text-white py-4 cursor-pointer px-4">Contact</div>
+            </div>
+        </div>
+
+        <div class="col-span-12 h-[80vh] overflow-hidden z-20">
+            <div class="col-span-12 bg-[#015557] h-24 rounded-md flex items-center max-w-[1600px] mx-auto px-9 select-none relative">
+                <div class="logo text-2xl text-[#B2F2F3] font-semibold">Property</div>
+
+                <div class="menu md:flex flex-1 justify-end list-none text-[#B2F2F3] gap-6 md:text-[14px] lg:text-base mr-5 hidden">
+                    <li class=" hover:text-white cursor-pointer active:text-white">Home</li>
+                    <li class=" hover:text-white cursor-pointer active:text-white relative menu-dropdown">
+                        Property
+                        <i class="fa-sharp fa-solid fa-chevron-down text-[12px] pl-2"></i>
+                        <div class="absolute top-5 left-[40%] sub-menu hidden">
+                            <i class="fa-solid fa-caret-up text-2xl translate-y-[60%] text-white"></i>
+                            <div class="bg-[#FFFFFF] flex flex-col text-[#333] py-6 w-[200px]">
+                                <div class="hover:bg-[#015557] hover:text-white py-4 px-8 w-full">something</div>
+                                <div class="hover:bg-[#015557] hover:text-white py-4 px-8 w-full">something</div>
+                                <div class="hover:bg-[#015557] hover:text-white py-4 px-8 w-full">something</div>
+                                <div class="hover:bg-[#015557] hover:text-white py-4 px-8 w-full">something</div>
+                            </div>
+                       </div>
+                    </li>
+                    <li class=" hover:text-white cursor-pointer active:text-white">Service</li>
+                    <li class=" hover:text-white cursor-pointer active:text-white">About</li>
+                    <li class=" hover:text-white cursor-pointer active:text-white">Contact Us</li>
+                </div>
+                <div class="md:hidden block absolute right-10 cursor-pointer">
+                    <div class="btn-menu">
+                        <i class="fa-solid fa-bars text-3xl text-[#B2F2F3] active:scale-105 active:text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-8 h-40 z-20 col-start-3 text-center mt-60">
+                <div class="text-white text-5xl font-semibold">Easiest way to find your dream home</div>
+                <div class="h-16 mt-10 text-lg font-semibold px-10 flex gap-5 max-w-2xl mx-auto flex-wrap">
+                    <input type="text" class="h-full rounded-[40px] placeholder:text-[#7D7D7D] px-8 outline-none flex-1" placeholder="Your ZIP code or city. e.g. New York">
+                    <button class="w-[150px] bg-[#015557] hover:bg-slate-700 hover:text-white active:bg-slate-800 active:text-white h-full rounded-[40px] text-[#B2F2F3] outline-none">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- products -->
+    <div class="max-w-[1600px] mx-auto px-4">
+        <div>
+            <!-- header-product -->
+            <div class="flex justify-between h-20 items-center my-11">
+                <div class="left text-3xl font-semibold">Popular Properties</div>
+                <div class="right md:h-full h-16">
+                    <button class="h-full md:w-56 w-44 bg-[#015557] rounded-[40px] md:text-lg text-sm font-semibold text-[#B2F2F3] ">View all properties</button>
+                </div>
+            </div>
+
+            <!-- list -->
+            <div class="gap-6 grid grid-cols-12">
+                <!-- item 1 -->
+                <div class="lg:col-span-4 col-span-6 shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md">
+                    <div class="relative w-full pb-[80%]">
+                        <img src="../images/img_1.jpg" class="absolute w-full h-full top-0 left-0 object-cover">
+                    </div>
+                    <div class="px-8 pt-6">
+                        <div>
+                            <p class="border-b-2 border-[#015557] inline text-2xl font-bold text-[#223730] pb-1">
+                                $1,200,000
+                            </p>
+                        </div>
+                        <div class="text-[#A8A8A8] text-sm mt-3">5232 Canifornia Fake, Avc, 21BC</div>
+                        <div class="text-2xl font-bold my-4 text-[#223730]">Canifornia, USA</div>
+                        <div class="flex text-sm text-[#a8a8a8] gap-4">
+                            <p>
+                                <i class="fa-solid fa-bed"></i>
+                                2 beds
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                2 baths
+                            </p>
+                        </div>
+                        <div class="my-8">
+                            <button class="w-[150px] h-12 bg-[#015557] rounded-[30px] text-[#B2F2F3] font-semibold">See details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 col-span-6 shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md">
+                    <div class="relative w-full pb-[80%]">
+                        <img src="../images/img_1.jpg" class="absolute w-full h-full top-0 left-0 object-cover">
+                    </div>
+                    <div class="px-8 pt-6">
+                        <div>
+                            <p class="border-b-2 border-[#015557] inline text-2xl font-bold text-[#223730] pb-1">
+                                $1,200,000
+                            </p>
+                        </div>
+                        <div class="text-[#A8A8A8] text-sm mt-3">5232 Canifornia Fake, Avc, 21BC</div>
+                        <div class="text-2xl font-bold my-4 text-[#223730]">Canifornia, USA</div>
+                        <div class="flex text-sm text-[#a8a8a8] gap-4">
+                            <p>
+                                <i class="fa-solid fa-bed"></i>
+                                2 beds
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                2 baths
+                            </p>
+                        </div>
+                        <div class="my-8">
+                            <button class="w-[150px] h-12 bg-[#015557] rounded-[30px] text-[#B2F2F3] font-semibold">See details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 col-span-6 shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md">
+                    <div class="relative w-full pb-[80%]">
+                        <img src="../images/img_1.jpg" class="absolute w-full h-full top-0 left-0 object-cover">
+                    </div>
+                    <div class="px-8 pt-6">
+                        <div>
+                            <p class="border-b-2 border-[#015557] inline text-2xl font-bold text-[#223730] pb-1">
+                                $1,200,000
+                            </p>
+                        </div>
+                        <div class="text-[#A8A8A8] text-sm mt-3">5232 Canifornia Fake, Avc, 21BC</div>
+                        <div class="text-2xl font-bold my-4 text-[#223730]">Canifornia, USA</div>
+                        <div class="flex text-sm text-[#a8a8a8] gap-4">
+                            <p>
+                                <i class="fa-solid fa-bed"></i>
+                                2 beds
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                2 baths
+                            </p>
+                        </div>
+                        <div class="my-8">
+                            <button class="w-[150px] h-12 bg-[#015557] rounded-[30px] text-[#B2F2F3] font-semibold">See details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="lg:col-span-4 col-span-6 shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md">
+                    <div class="w-full relative pb-[80%]">
+                        <img src="../images/img_2.jpg" class="object-top absolute w-full h-full object-cover">
+                    </div>
+                    <div class="px-8 pt-6">
+                        <div>
+                            <p class="border-b-2 border-[#015557] inline text-2xl font-bold text-[#223730] pb-1">
+                                $1,232,000
+                            </p>
+                        </div>
+                        <div class="text-[#A8A8A8] text-sm mt-3">5232 Canifornia Fake, Avc, 21BC</div>
+                        <div class="text-2xl font-bold my-4 text-[#223730]">Canifornia, USA</div>
+                        <div class="flex text-sm text-[#a8a8a8] gap-4">
+                            <p>
+                                <i class="fa-solid fa-bed"></i>
+                                2 beds
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                2 baths
+                            </p>
+                        </div>
+                        <div class="my-8">
+                            <button class="w-[150px] h-12 bg-[#015557] rounded-[30px] text-[#B2F2F3] font-semibold">See details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- item 3 -->
+                <div class="lg:col-span-4 col-span-6 shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md">
+                    <div class="w-full relative pb-[80%]">
+                        <img src="../images/img_3.jpg" class="object-top w-full absolute h-full object-cover">
+                    </div>
+                    <div class="px-8 pt-6">
+                        <div>
+                            <p class="border-b-2 border-[#015557] inline text-2xl font-bold text-[#223730] pb-1">
+                                $1,440,000
+                            </p>
+                        </div>
+                        <div class="text-[#A8A8A8] text-sm mt-3">5232 Canifornia Fake, Avc, 21BC</div>
+                        <div class="text-2xl font-bold my-4 text-[#223730]">Canifornia, USA</div>
+                        <div class="flex text-sm text-[#a8a8a8] gap-4">
+                            <p>
+                                <i class="fa-solid fa-bed"></i>
+                                2 beds
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bath"></i>
+                                2 baths
+                            </p>
+                        </div>
+                        <div class="my-8">
+                            <button class="w-[150px] h-12 bg-[#015557] rounded-[30px] text-[#B2F2F3] font-semibold">See details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- end list -->
+            <!-- footer-products -->
+            <div class="flex justify-between mt-20 h-10">
+                <div><button class="w-20 h-full bg-slate-300 rounded-[30px] cursor-pointer">Pre</button></div>
+                <div>...</div>
+                <div><button class="w-20 h-full bg-slate-300 rounded-[30px] cursor-pointer">Next</button></div>
+            </div>
+        </div>
+        <!-- end products -->
+    </div>
+    <!-- service -->
+    <div class="bg-[#F0F4F6]">
+    <div class="max-w-[1600px] grid grid-cols-12 gap-7 py-6 mt-36 px-6 mx-auto">
+        <div class="lg:col-span-3 md:col-span-6 col-span-12 h-full bg-white shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md text-center py-6 px-6 flex flex-col lg:gap-6 gap-2 justify-between">
+            <div>
+                <i class="fa-solid fa-house-chimney-user text-[90px] text-[#00133B]"></i>
+            </div>
+            <div class="text-2xl font-semibold text-[#00133B]">Our properties</div>
+            <div class="text-sm text-[#B2B2B2] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nesciunt esse illo incidunt fugiat voluptatem accusantium </div>
+            <div>
+                <div class="text-[#015557] font-semibold border-b-2 border-[#015557] inline pb-3">Learn more</div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 md:col-span-6 col-span-12 h-full bg-white shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md text-center py-6 px-6 flex flex-col lg:gap-6 gap-2 justify-between">
+            <div>
+                <i class="fa-regular fa-building text-[90px] text-[#00133B]"></i>
+            </div>
+            <div class="text-2xl font-semibold text-[#00133B]">Property for Sale</div>
+            <div class="text-sm text-[#B2B2B2] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nesciunt esse illo incidunt fugiat voluptatem accusantium </div>
+            <div>
+                <div class="text-[#015557] font-semibold border-b-2 border-[#015557] inline pb-3">Learn more</div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 md:col-span-6 col-span-12 h-full bg-white shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md text-center py-6 px-6 flex flex-col lg:gap-6 gap-2 justify-between">
+            <div>
+                <i class="fa-solid fa-person-shelter text-[90px] text-[#00133B]"></i>
+            </div>
+            <div class="text-2xl font-semibold text-[#00133B]">Real Estate Agent</div>
+            <div class="text-sm text-[#B2B2B2] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nesciunt esse illo incidunt fugiat voluptatem accusantium </div>
+            <div>
+                <div class="text-[#015557] font-semibold border-b-2 border-[#015557] inline pb-3">Learn more</div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 md:col-span-6 col-span-12 h-full bg-white shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-md text-center py-6 px-6 flex flex-col lg:gap-6 gap-2 justify-between">
+            <div>
+                <i class="fa-solid fa-warehouse text-[90px] text-[#00133B]"></i>
+            </div>
+            <div class="text-2xl font-semibold text-[#00133B]">House for Sale</div>
+            <div class="text-sm text-[#B2B2B2] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nesciunt esse illo incidunt fugiat voluptatem accusantium </div>
+            <div>
+                <div class="text-[#015557] font-semibold border-b-2 border-[#015557] inline pb-3">Learn more</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="max-w-[1600px] mx-auto bg-white">
+        <div class="col-span-12 grid grid-cols-12 mx-6 mt-6">
+            <div class="flex justify-between items-center col-span-12">
+                <div class="lg:text-4xl md:text-3xl text-2xl font-semibold">Custommer Stay</div>
+                <div class="flex gap-3 h-14 text-[gray]">
+                    <div class="bg-[#E5E9EC] w-20 h-10 rounded-[20px] flex justify-center items-center">Next</div>
+                    <div class="bg-[#E5E9EC] w-20 h-10 rounded-[20px] flex justify-center items-center">Prev</div>
+                </div>
+            </div>
+            <div class="w-full grid grid-cols-12 col-span-12 gap-6">
+            <div class="mt-14 lg:col-span-4 md:col-span-6 sm:col-span-8 col-span-10 sm:col-start-3 col-start-2 flex flex-col gap-4 md:items-start md:text-left items-center text-center shadow-[rgba(0, 0, 0, 0.24)] shadow-lg p-6">
+                <div class="w-36 h-36">
+                    <img class=" rounded-[100%]" src="../images/person_1-min.jpg" alt="">
+                </div>
+                <div class="flex gap-2 text-[#FFBF15]">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star"></i></div>
+                </div>
+                <div class="text-2xl font-semibold">Dave Smith</div>
+                <div class="text-[gray] font-medium text-sm">"Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean."
+                </div>
+                <div class="font-semibold text-gray-600">Designer, Co-founder</div>
+            </div>
+            <div class="mt-14 lg:col-span-4 md:col-span-6 sm:col-span-8 col-span-10 sm:col-start-3 col-start-2 flex flex-col gap-4 md:items-start md:text-left items-center text-center shadow-[rgba(0, 0, 0, 0.24)] shadow-lg p-6">
+                <div class="w-36 h-36">
+                    <img class=" rounded-[100%]" src="../images/person_2-min.jpg" alt="">
+                </div>
+                <div class="flex gap-2 text-[#FFBF15]">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star"></i></div>
+                    <div><i class="fa-regular fa-star"></i></div>
+                </div>
+                <div class="text-2xl font-semibold">Dave Smith</div>
+                <div class="text-[gray] font-medium text-sm">"Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean."
+                </div>
+                <div class="font-semibold text-gray-600">Designer, Co-founder</div>
+            </div>
+
+            <div class="mt-14 lg:col-span-4 md:col-span-6 sm:col-span-8 col-span-10 sm:col-start-3 col-start-2 flex flex-col gap-4 md:items-start md:text-left items-center text-center shadow-[rgba(0, 0, 0, 0.24)] shadow-lg p-6">
+                <div class="w-36 h-36">
+                    <img class=" rounded-[100%]" src="../images/person_3-min.jpg" alt="">
+                </div>
+                <div class="flex gap-2 text-[#FFBF15]">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="text-2xl font-semibold">Dave Smith</div>
+                <div class="text-[gray] font-medium text-sm">"Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean."
+                </div>
+                <div class="font-semibold text-gray-600">Designer, Co-founder</div>
+            </div>
+        </div>
+        </div>
+        <div class="col-span-12 flex justify-center text-4xl">...</div>
+    </div>
+    <div class=" bg-[#F9F9F9] mx-auto mt-6 p-6 pt-12">
+        <div class="max-w-[1600px] bg-[#F9F9F9] mx-auto flex flex-col">
+            <div class="w-full flex flex-col items-center gap-6">
+                <div class="text-4xl font-semibold text-[#3B4B6B]">Let's find home that's perfect for You</div>
+                <div class="text-sm font-medium text-[gray] text-center">Lore ipsum dolor sit amet consectetur adipisicing elit. Numquam enim
+                    pariatur similique debits vel nisi qui reprehenderit.
+                </div>
+            </div>
+            <div class="flex mt-20 lg:flex-row flex-col lg:gap-0 gap-12">
+                <div class="flex-0 flex flex-col gap-16">
+                    <div class="flex gap-4 items-center lg:justify-start justify-center">
+                        <div class="w-24 h-24 bg-[#EFEFEF] flex justify-center items-center shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-[100%]"><i class="fa-solid fa-house"></i></div>
+                        <div>
+                            <div class="text-xl font-bold text-[#3B4B6B]">2M Properties</div>
+                            <div class="w-[350px] font-medium text-[gray]">Lore ipsum dolor sit amet consectetur adipisicing elit. Numquam enim</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-center lg:justify-start justify-center">
+                        <div class="w-24 h-24 bg-[#EFEFEF] flex justify-center items-center shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-[100%]"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <div class="text-xl font-bold text-[#3B4B6B]">Top Rated Agents</div>
+                            <div class="w-[350px] font-medium text-[gray]">Lore ipsum dolor sit amet consectetur adipisicing elit. Numquam enim</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-center lg:justify-start justify-center">
+                        <div class="w-24 h-24 bg-[#EFEFEF] flex justify-center items-center shadow-[rgba(0, 0, 0, 0.24)] shadow-lg rounded-[100%]"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <div class="text-xl font-bold text-[#3B4B6B]">Legit Properties</div>
+                            <div class="w-[350px] font-medium text-[gray]">Lore ipsum dolor sit amet consectetur adipisicing elit. Numquam enim</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 shadow-[rgba(0, 0, 0, 0.24)] shadow-lg relative min-h-[600px]">
+                    <img class="absolute w-full h-full object-cover" src="../images/hero_bg_3.jpg" alt="">
+                </div>
+            </div>
+            <div class="my-28 grid grid-cols-12 w-full mx-auto text-center">
+                <div class="col-span-3">
+                    <div class="text-4xl font-black">3,298</div>
+                    <div class="text-sm text-[gray] font-semibold mt-3"># of Buy Properties</div>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="text-4xl font-black">2.181</div>
+                    <div class="text-sm text-[gray] font-semibold mt-3"># of Sell Properties</div>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="text-4xl font-black">9,316</div>
+                    <div class="text-sm text-[gray] font-semibold mt-3"># of All Properties</div>
+                </div>
+
+                <div class="col-span-3">
+                    <div class="text-4xl font-black">7191</div>
+                    <div class="text-sm text-[gray] font-semibold mt-3"># of Agents</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-12 gap-5 max-w-[1600px] bg-white py-16 mx-auto">
+        <div class="col-span-12 flex flex-col items-center gap-7 px-6 mx-auto text-center">
+            <div class="text-4xl font-semibold text-[#01545B]">Be a part of our growing real state agents</div>
+            <div class="w-[250px] h-12 rounded-[25px] bg-[#01545B] text-white flex justify-center items-center cursor-pointer"><button>Apply for Real Rstate agent</button></div>
+        </div>
+    </div>
+<div class="bg-[#EFEFEF]">
+    <div class="grid grid-cols-12 gap-5 max-w-[1600px] mx-auto bg-inherit py-16">
+        <div class="col-span-12 flex flex-col mx-6">
+            <div class="grid grid-cols-12 w-full">
+                <div class="flex flex-col items-center gap-4 col-span-12 mb-40">
+                    <div class="text-4xl font-medium text-[#01545B]">Our Agents</div>
+                    <div class="flex flex-wrap text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quod! Quia voluptatum beatae id exercitationem, error culpa harum deserunt praesentiu</div>
+                </div>
+                <div class="col-span-12 grid grid-cols-12 gap-9 gap-y-28">
+                    <div class="lg:col-span-4 md:col-span-8 col-span-10 lg:col-start-0 md:col-start-3 col-start-2 flex flex-col gap-5 bg-white pb-16 items-center rounded-sm shadow-[rgba(0, 0, 0, 0.24)] shadow-lg px-7">
+                        <div class="relative w-40 h-40 translate-y-[-50%] -mb-20">
+                            <img class="absolute w-full h-full rounded-[100%]" src="../images/person_4-min.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">James Doe</div>
+                            <div class="text-[gray] text-sm font-semibold">Real Estate Agent</div>
+                        </div>
+                        <div class="text-[gray] font-semibold text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt possimus est at accusantium quaerat delectus ea eum eveniet praesentium, officiis veritatis aperiam debitis. Sapiente, cupiditate reprehenderit. Consectetur, totam exercitationem.</div>
+                        <div class="flex justify-center gap-6 flex-wrap">
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-8 col-span-10 lg:col-start-0 md:col-start-3 col-start-2 flex flex-col gap-5 bg-white pb-16 items-center rounded-sm shadow-[rgba(0, 0, 0, 0.24)] shadow-lg px-7">
+                        <div class="relative w-40 h-40 translate-y-[-50%] -mb-20">
+                            <img class="absolute w-full h-full rounded-[100%]" src="../images/person_3-min.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">James Doe</div>
+                            <div class="text-[gray] text-sm font-semibold">Real Estate Agent</div>
+                        </div>
+                        <div class="text-[gray] font-semibold text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt possimus est at accusantium quaerat delectus ea eum eveniet praesentium, officiis veritatis aperiam debitis. Sapiente, cupiditate reprehenderit. Consectetur, totam exercitationem.</div>
+                        <div class="flex justify-center gap-6 flex-wrap">
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-8 col-span-10 lg:col-start-0 md:col-start-3 col-start-2 flex flex-col gap-5 bg-white pb-16 items-center rounded-sm shadow-[rgba(0, 0, 0, 0.24)] shadow-lg px-7">
+                        <div class="relative w-40 h-40 translate-y-[-50%] -mb-20">
+                            <img class="absolute w-full h-full rounded-[100%]" src="../images/person_2-min.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">James Doe</div>
+                            <div class="text-[gray] text-sm font-semibold">Real Estate Agent</div>
+                        </div>
+                        <div class="text-[gray] font-semibold text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt possimus est at accusantium quaerat delectus ea eum eveniet praesentium, officiis veritatis aperiam debitis. Sapiente, cupiditate reprehenderit. Consectetur, totam exercitationem.</div>
+                        <div class="flex justify-center gap-6 flex-wrap">
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="w-16 h-16 rounded-[100%] bg-[#01213F] flex justify-center items-center text-white">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-[#F9F9F9] py-16 px-6">
+    <div class="max-w-[1600px] mx-auto mt-10">
+        <div class="grid grid-cols-12 gap-9 gap-y-16">
+            <div class="lg:col-span-4 col-span-6 flex flex-col gap-5">
+                <div class="font-bold text-lg text-[#01545B]">CONTACT</div>
+                <div class="text-[gray] text-sm flex flex-col gap-4 underline">
+                    <div>43 Raymouth Rd. Baltemoer, London 3910</div>
+                    <div>+1(123)-456-7890</div>
+                    <div>+1(123)-456-7890</div>
+                    <div>Info@mydomain.com</div>
+                </div>
+            </div>
+            <div class="lg:col-span-4 col-span-6 flex flex-col gap-5">
+                <div class="font-bold text-lg text-[#01545B]">SOURCE</div>
+                <div class="text-[gray] text-sm flex gap-24 underline">
+                    <div class="text-[gray] text-sm flex flex-col gap-4 underline">
+                        <div>About Us</div>
+                        <div>Services</div>
+                        <div>Vision</div>
+                        <div>Mission</div>
+                        <div>Terms</div>
+                        <div>Privacy</div>
+                    </div>
+                    <div class="text-[gray] text-sm flex flex-col gap-4 underline">
+                        <div>Partners</div>
+                        <div>Businiess</div>
+                        <div>Careers</div>
+                        <div>Blog</div>
+                        <div>FAQ</div>
+                        <div>Creative</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-4 col-span-10 lg:col-start-0 col-start-1 flex flex-col gap-5">
+                <div class="font-bold text-lg text-[#01545B]">LINK</div>
+                <div class="text-[gray] text-sm flex flex-col gap-4">
+                    <div class="underline">Our Vision</div>
+                    <div class="underline">About Us</div>
+                    <div class="underline">Contact Us</div>
+                    <div class="flex gap-2 no-underline">
+                        <div class="w-10 h-10 grid place-items-center rounded-2xl bg-[#CDCDCD]"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="w-10 h-10 flex justify-center items-center rounded-2xl bg-[#CDCDCD]"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="w-10 h-10 flex justify-center items-center rounded-2xl bg-[#CDCDCD]"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="w-10 h-10 flex justify-center items-center rounded-2xl bg-[#CDCDCD]"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="w-10 h-10 flex justify-center items-center rounded-2xl bg-[#CDCDCD]"><i class="fa-brands fa-pinterest"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 flex justify-center select-none text-xs font-semibold text-[gray] pt-24">Copyright ©2022. All Rights Reserved. - Designed with love by Untree.co</div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+</html>
