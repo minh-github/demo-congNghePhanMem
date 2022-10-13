@@ -13,10 +13,12 @@ fetch(url)
 function handelResponse(data){
     province.style.display = 'block';
     province.style.padding = '1px 10px 1px 40px';
+    province.style.borderColor = 'var(--border-color-9)';
     province.style.height = '65px';
     wards.style.display = 'block';
     wards.style.padding = '1px 10px 1px 40px';
     wards.style.height = '65px';
+    wards.style.borderColor = 'var(--border-color-9)';
     document.querySelector('.nice-select.province').style.display ='none';
     document.querySelector('.nice-select.wards').style.display ='none';
     let htmls = data.map((provin)=>{
