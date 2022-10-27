@@ -48,9 +48,7 @@
                                     </li>
                                     <li>
                                         <!-- header-top-btn -->
-                                        <div class="header-top-btn">
-                                            <a href="add-listing.html">Add Listing</a>
-                                        </div>
+
                                     </li>
                                 </ul>
                             </div>
@@ -68,7 +66,7 @@
                     <div class="col">
                         <div class="site-logo-wrap">
                             <div class="site-logo">
-                                <a href="<?php echo WEB_ROOT;?>"><img src="<?php echo WEB_ROOT;?>/public/assets/img/logo.png" alt="Logo"></a>
+                                <a href="<?php echo WEB_ROOT;?>"><img src="<?php echo WEB_ROOT;?>/public/assets/img/logo-2.png" alt="Logo"></a>
                             </div>
                             <div class="get-support clearfix d-none">
                                 <div class="get-support-icon">
@@ -134,7 +132,7 @@
         <div class="ltn__utilize-menu-inner ltn__scrollbar">
             <div class="ltn__utilize-menu-head">
                 <div class="site-logo">
-                    <a href="<?php echo WEB_ROOT;?>"><img src="<?php echo WEB_ROOT;?>/public/assets/img/logo.png" alt="Logo"></a>
+                    <a href="<?php echo WEB_ROOT;?>"><img src="<?php echo WEB_ROOT;?>/public/assets/img/logo-2.png" alt="Logo"></a>
                 </div>
                 <button class="ltn__utilize-close">×</button>
             </div>

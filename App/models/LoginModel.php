@@ -7,7 +7,7 @@ class LoginModel extends BaseModel{
 
     public function index($data)
     {
-        $table = 'tbl_qlkh';
+        $table = 'users';
         return $this->db->checkLogin($table,$data);
     }
 }

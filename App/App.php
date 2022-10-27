@@ -10,7 +10,7 @@ class App{
         
         $this-> __routes = new Route();
 
-        $this->__controller = $routes['default_controller'];
+        $this->__controller = 'Home';
         $this->__action = 'index';
         $this->__params = [];
         
@@ -22,6 +22,7 @@ class App{
     {
         if(!empty($_SERVER['REQUEST_URI'])){
             $url = $_SERVER['REQUEST_URI'];
+
         }else{
             $url = '/';
         }
@@ -36,8 +37,6 @@ class App{
 
      $urlArr = array_values(array_filter( explode('/',$newUrl)));
 
-
-    
         //xử lí controller
 
         if(!empty($urlArr[0])){

@@ -18,7 +18,7 @@ class BaseDatabase{
             }
             $fieldStr = rtrim($fieldStr, ',');
             $valueStr = rtrim($valueStr, ',');
-
+            
             $sql = "INSERT INTO $table ($fieldStr) VALUES ($valueStr)"; 
             $status = mysqli_query($this->__conn, $sql);
 
@@ -29,7 +29,7 @@ class BaseDatabase{
         return false;
     }
 
-    public function upadate($table,$data,$condition)
+    public function update($table,$data,$condition)
     {
         if (!empty($data)) { 
             $updateStr = '';
@@ -64,11 +64,32 @@ class BaseDatabase{
         }
         return false;
     }
+
     public function getAll($table)
     {
         $sql = "SELECT * From $table";
         $data = $this->__conn->query($sql);
         return $data;
+    }
+
+    public function search($table,$data)
+    {
+        if (!empty($data)) {
+            $fieldStr = '';
+            $valueStr = '';
+            foreach ($data as $key => $val) {
+                $fieldStr.= $key.',';
+                $valueStr.="'".$val."',";
+            }
+            $fieldStr = rtrim($fieldStr, ',');
+            $valueStr = rtrim($valueStr, ',');
+
+            $sql = "SELECT * FROM $table WHERE ($fieldStr) = ($valueStr)"; 
+
+            $status = mysqli_query($this->__conn, $sql);
+
+            return $status;
+        }
     }
 
     public function checkLogin($table,$data)
@@ -88,10 +109,16 @@ class BaseDatabase{
             $status = mysqli_query($this->__conn, $sql);
 
             if ($status->num_rows > 0) {
-                return true;
+                return $status;
             }
             return false;
         }
         return false;
+    }
+
+    public function query($sql)
+    {
+        $data = $this->__conn->query($sql);
+        return $data;
     }
 }

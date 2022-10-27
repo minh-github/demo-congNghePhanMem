@@ -7,7 +7,7 @@ class RegisterModel extends BaseModel{
 
     public function index($data)
     {
-        $table = 'tbl_qlkh';
+        $table = 'users';
         $res = $this->db->insert($table,$data);
     }
 }

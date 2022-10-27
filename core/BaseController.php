@@ -16,9 +16,16 @@ class BaseController{
     public function render($view, $data=[])
     {
         extract($data);
+        
         if(file_exists(_DIR_ROOT.'/App/views/'.$view.'.php')){
             require_once  _DIR_ROOT.'/App/views/'.$view.'.php';
         }
     }
 
+    public function renderNoExtract($view, $data)
+    {
+        if(file_exists(_DIR_ROOT.'/App/views/'.$view.'.php')){
+            require_once  _DIR_ROOT.'/App/views/'.$view.'.php';
+        }
+    }
 }

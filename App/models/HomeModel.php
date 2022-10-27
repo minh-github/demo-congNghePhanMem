@@ -1,12 +1,25 @@
 <?php
 class HomeModel extends BaseModel{
-    public function getList()
+    public function getByLocation()
     {
-        return [
-            'hang pham 1',
-            'hang pham 2',
-            'hang pham 3',
-            'hang pham 5'
-        ];
+        if(isset($_POST['province'])){
+            $location = $_POST['province'];
+        }
+        else{$location = "Tỉnh Quảng Ninh";}
+
+        $sql = "SELECT * From house WHERE house.active = '1' and house.province = '$location' LIMIT 0,3";
+        return $this->db->query($sql);
+    }
+
+    public function getByTime()
+    {
+        $sql = "SELECT house.*, admin.* FROM house INNER JOIN admin ON house.ad_id = admin.ad_id ORDER BY house.timePost DESC LIMIT 0,3";
+        return $this->db->query($sql);
+    }
+
+    public function getNews()
+    {
+        $sql = "SELECT news.*, admin.* FROM news INNER JOIN admin ON news.ad_id = admin.ad_id ORDER BY news.posttime DESC LIMIT 0,3";
+        return $this->db->query($sql);
     }
 }

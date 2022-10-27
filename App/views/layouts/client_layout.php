@@ -1,7 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-    <!-- Mirrored from tunatheme.com/tf/html/quarter-preview/quarter-rtl/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Oct 2022 03:53:19 GMT -->
-    <head>
+
+
+<!-- Mirrored from tunatheme.com/tf/html/quarter-preview/quarter/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Oct 2022 03:48:07 GMT -->
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Quarter - Real Estate HTML Template</title>
@@ -20,14 +22,15 @@
     <!-- Responsive css -->
     <link rel="stylesheet" href="<?php echo WEB_ROOT;?>/public/assets/css/responsive.css">
 
-
-<script src="<?php echo WEB_ROOT;?>/public/assets/js/plugins.js"></script>
-<script src="<?php echo WEB_ROOT;?>/public/assets/js/main.js"></script>
-
+    <script src="<?php echo WEB_ROOT;?>/public/assets/js/plugins.js"></script>
+    <script src="<?php echo WEB_ROOT;?>/public/assets/js/main.js"></script>
 </head>
 
 <?php
-    $this->render($content);
+    $this->render($content, $sub_content);
 ?>
 </body>
 </html>
+<script>
+    (function(d,h,w){var gist=w.gist=w.gist||[];gist.methods=['trackPageView','identify','track','setAppId'];gist.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);gist.push(e);return gist;}};for(var i=0;i<gist.methods.length;i++){var c=gist.methods[i];gist[c]=gist.factory(c)}s=d.createElement('script'),s.src="https://widget.getgist.com",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),gist.setAppId("73sc9j42"),gist.trackPageView()})(document,'head',window);
+</script>

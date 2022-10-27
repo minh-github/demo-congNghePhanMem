@@ -3,6 +3,7 @@
 class Login extends BaseController{
     public function index()
     {
+        $this->data['sub_content']['info'] = '';
         $this->data['content'] = 'Login/LoginView';
         $this->render('layouts/client_layout',$this->data);
     }

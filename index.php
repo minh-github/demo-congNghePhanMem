@@ -6,5 +6,4 @@ error_reporting(E_ALL);
 session_start();
 require_once "bootstrap.php";
 $App = new App;
-
 // phpinfo();

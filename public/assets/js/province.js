@@ -7,6 +7,7 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     handelResponse(data);
+    wardsDefault(data);
     handelSeclect(data);
   });
 
@@ -38,4 +39,12 @@ function handelSeclect(data){
     })
     wards.innerHTML = htmls.join('');
   });
+}
+function wardsDefault(data){
+    let htmls = data['0'].districts.map(element => {
+      return `
+        <option>${element.name}</option>
+      `
+    })
+    wards.innerHTML = htmls.join('');
 }
