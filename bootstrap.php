@@ -2,7 +2,7 @@
     define('_DIR_ROOT', __DIR__);
 
     $folder = str_replace($_SERVER['DOCUMENT_ROOT'],"",_DIR_ROOT);
-    $webRoot = "http://".$_SERVER['HTTP_HOST'].$folder;
+    $webRoot = "https://".$_SERVER['HTTP_HOST'].$folder;
 
     define('WEB_ROOT', $webRoot);
 
