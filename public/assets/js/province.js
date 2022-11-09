@@ -27,7 +27,8 @@ function handelResponse(data){
         <option>${provin.name}</option>
       `
     });
-    province.innerHTML = htmls.join('');
+    console.log(province.innerHTML);
+    province.innerHTML += htmls.join('');
 }
 function handelSeclect(data){
   province.addEventListener('change', function(){

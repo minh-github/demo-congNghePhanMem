@@ -7,13 +7,13 @@ class HomeModel extends BaseModel{
         }
         else{$location = "Tỉnh Quảng Ninh";}
 
-        $sql = "SELECT * From house WHERE house.active = '1' and house.province = '$location' LIMIT 0,3";
+        $sql = "SELECT house.*, admin.* FROM house INNER JOIN admin ON house.ad_id = admin.ad_id and house.province = '$location' ORDER BY house.timePost DESC LIMIT 0,3";
         return $this->db->query($sql);
     }
 
     public function getByTime()
     {
-        $sql = "SELECT house.*, admin.* FROM house INNER JOIN admin ON house.ad_id = admin.ad_id ORDER BY house.timePost DESC LIMIT 0,3";
+        $sql = "SELECT house.*, admin.* FROM house INNER JOIN admin ON house.ad_id = admin.ad_id WHERE house.active = '1' ORDER BY house.timePost DESC LIMIT 0,3";
         return $this->db->query($sql);
     }
 

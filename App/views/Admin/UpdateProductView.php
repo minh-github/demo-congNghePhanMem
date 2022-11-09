@@ -2,11 +2,9 @@
     if(!isset($_SESSION['adminLogin'])){
         header('location:'.WEB_ROOT.'/'.'admin/');
     }
-?>
-<?php
+    
     if (!empty($dataForm)) {
         foreach($dataForm as $key => $value){
-            $type = $value['type'];
             $title = $value['title'];
             $description = $value['description'];
             $thumb = $value['thumb'];
@@ -26,7 +24,7 @@
 ?>
 
 <link rel="stylesheet" href="<?php echo WEB_ROOT;?>/public/assets/css/substyle.css">
-<script src="https://cdn.tiny.cloud/1/jc54zao7ilqbjmkclb5r4mbs6uusgxdicay7p9671n6y4jh6/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/1vaung1y0h5vcq7ul3hoxiqdisbfqfpaldjuvakxonqaudms/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 <body style="padding-top: 30px;">
 <div class="body-wrapper">
@@ -39,21 +37,11 @@
                 <div class="col-lg-12">                    
                     <form action="<?php echo WEB_ROOT;?>/admin/updateProduct/" method="post" id="formAdd" enctype="multipart/form-data">
                         <div class="tab-content">
+                            <input type="text" name="ad_id" hidden value ="<?php echo $_SESSION['ad_id']?>">
                             <input type="text" hidden name="h_id" value="<?php echo $_GET['h_id']; ?>">
                             <div class="tab-pane fade active show" id="liton_tab_3_1">
                                 <div class="ltn__apartments-tab-content-inner">
-                                <h6>Type</h6>
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="input-item">
-                                                <select class="nice-select" name="type" form="formAdd" value="<?php echo $type;?>">
-                                                    <option>TRUNG CƯ</option>
-                                                    <option>NHÀ Ở</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6>Property Title</h6>
+                                    <h6>Tiêu đề</h6>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="input-item input-item-textarea ltn__custom-icon">
@@ -62,7 +50,7 @@
                                         </div>
                                     </div>
 
-                                    <h6>Property Description</h6>
+                                    <h6>Mô tả ngắn</h6>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="input-item input-item-textarea ltn__custom-icon">
@@ -71,7 +59,7 @@
                                         </div>
                                     </div>
 
-                                    <h6>Property Detail</h6>
+                                    <h6>Chi tiết nhà</h6>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-item input-item-textarea ltn__custom-icon">
@@ -105,14 +93,14 @@
                                         </div>
                                     </div>
 
-                                    <h6>Content</h6>
+                                    <h6>Nội dung</h6>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <textarea class="testArea" name="content" cols="30" rows="10"><?php echo $description;?></textarea>
+                                            <textarea class="testArea" name="content" cols="30" rows="40"><?php echo $description;?></textarea>
                                         </div>
                                     </div>
 
-                                    <h6  style="margin-top:30px;">Thumb</h6>
+                                    <h6  style="margin-top:30px;">Ảnh bìa</h6>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="input-item input-item-textarea ltn__custom-icon">
@@ -121,7 +109,7 @@
                                         </div>
                                     </div>
 
-                                    <h6  style="margin-top:30px;">Images</h6>
+                                    <h6  style="margin-top:30px;">Ảnh mô tả</h6>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="input-item input-item-textarea ltn__custom-icon">
@@ -130,11 +118,10 @@
                                         </div>
                                     </div>
 
-                                    <h6>Property Location</h6>
+                                    <h6>Vị trí</h6>
                                     <div class="row">
                                     <div class="flex">
                                         <select class="province" name="tinh" form="formAdd">
-                                            <option>Tỉnh</option>
                                         </select>
                                         <select class="wards" name="huyen" form="formAdd">
                                             <option>Thành Phố Uông Bí</option>

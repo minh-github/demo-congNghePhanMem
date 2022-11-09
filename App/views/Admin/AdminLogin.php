@@ -146,18 +146,18 @@ button{
         <div class="shape"></div>
     </div>
     <form action="<?php echo WEB_ROOT;?>/admin/check/" method="post">
-        <h3>Login Here</h3>
+        <h3>Đăng Nhập</h3>
 
-        <label for="username">Username</label>
-        <input type="text" name="username" placeholder="User Name" id="username">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" name="username" placeholder="Tên đăng nhập" id="username">
 
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Password" id="password">
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" placeholder="Mật khẩu" id="password">
 
-        <button>Log In</button>
+        <button>Đăng nhập</button>
 
         <div style="margin-top: 20px;">
-            DON'T HAVE AN ACCOUNT? <a href="<?php echo WEB_ROOT;?>/admin/registerAdmin/" style="color:black;">create</a>
+            BẠN CHƯA CÓ TÀI KHOẢN? <a href="<?php echo WEB_ROOT;?>/admin/registerAdmin/" style="color:black;">ĐĂNG KÝ</a>
         </div>
     </form>
 </body>

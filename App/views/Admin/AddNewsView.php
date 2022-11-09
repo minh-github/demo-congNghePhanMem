@@ -3,8 +3,7 @@
         header('location:'.WEB_ROOT.'/'.'admin/');
     }
 ?>
-<link rel="stylesheet" href="<?php echo WEB_ROOT;?>/public/assets/css/substyle.css">
-<script src="https://cdn.tiny.cloud/1/jc54zao7ilqbjmkclb5r4mbs6uusgxdicay7p9671n6y4jh6/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/1vaung1y0h5vcq7ul3hoxiqdisbfqfpaldjuvakxonqaudms/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 <body style="padding-top: 30px;">
 <div class="body-wrapper">
@@ -42,7 +41,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="input-item input-item-textarea">
-                                                <input type="file" name="thumb[]" multiple placeholder="*thumb" accept="image/*" value="">
+                                                <input type="file" name="thumb" placeholder="*thumb" accept="image/*" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -50,16 +49,7 @@
                                     <h6 style="margin-top:30px;">Nội dung bài viết</h6>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <textarea class="testArea" name="content" cols="30" rows="10"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <h6  style="margin-top:30px;">Thêm ảnh</h6>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="input-item input-item-textarea">
-                                                <input type="file" name="image[]" multiple placeholder="*image" accept="image/*" value="">
-                                            </div>
+                                            <textarea class="testArea" name="content" cols="30" rows="40"></textarea>
                                         </div>
                                     </div>
                                     <div class="btn-wrapper text-center--- mt-0">

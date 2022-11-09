@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Quarter - Real Estate HTML Template</title>
+    <title>Bán nhà đất Online</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,8 +24,11 @@
 
     <script src="<?php echo WEB_ROOT;?>/public/assets/js/plugins.js"></script>
     <script src="<?php echo WEB_ROOT;?>/public/assets/js/main.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0" nonce="OBCR5NZe"></script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 </head>
-
+<div id="top"></div>
 <?php
     $this->render($content, $sub_content);
 ?>

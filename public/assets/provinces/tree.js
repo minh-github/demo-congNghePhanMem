@@ -7,6 +7,14 @@
       "phone_code": 24,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Quận Ba Đình",
           "code": 1,
           "codename": "quan_ba_dinh",
@@ -4339,6 +4347,14 @@
       "phone_code": 219,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Hà Giang",
           "code": 24,
           "codename": "thanh_pho_ha_giang",
@@ -5798,6 +5814,14 @@
       "phone_code": 206,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Cao Bằng",
           "code": 40,
           "codename": "thanh_pho_cao_bang",
@@ -7024,6 +7048,14 @@
       "phone_code": 209,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành Phố Bắc Kạn",
           "code": 58,
           "codename": "thanh_pho_bac_kan",
@@ -7860,6 +7892,14 @@
       "division_type": "tỉnh",
       "phone_code": 207,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Tuyên Quang",
           "code": 70,
@@ -8898,6 +8938,14 @@
       "division_type": "tỉnh",
       "phone_code": 214,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Lào Cai",
           "code": 80,
@@ -10053,6 +10101,14 @@
       "phone_code": 215,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Điện Biên Phủ",
           "code": 94,
           "codename": "thanh_pho_dien_bien_phu",
@@ -11055,6 +11111,14 @@
       "phone_code": 213,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Lai Châu",
           "code": 105,
           "codename": "thanh_pho_lai_chau",
@@ -11877,6 +11941,14 @@
       "division_type": "tỉnh",
       "phone_code": 212,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Sơn La",
           "code": 116,
@@ -13423,6 +13495,14 @@
       "phone_code": 216,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Yên Bái",
           "code": 132,
           "codename": "thanh_pho_yen_bai",
@@ -14724,6 +14804,14 @@
       "phone_code": 218,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Hòa Bình",
           "code": 148,
           "codename": "thanh_pho_hoa_binh",
@@ -15879,6 +15967,14 @@
       "division_type": "tỉnh",
       "phone_code": 208,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Thái Nguyên",
           "code": 164,
@@ -17215,6 +17311,14 @@
       "division_type": "tỉnh",
       "phone_code": 205,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Lạng Sơn",
           "code": 178,
@@ -18724,6 +18828,14 @@
       "phone_code": 203,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Hạ Long",
           "code": 193,
           "codename": "thanh_pho_ha_long",
@@ -20088,6 +20200,14 @@
       "division_type": "tỉnh",
       "phone_code": 204,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Bắc Giang",
           "code": 213,
@@ -21650,6 +21770,14 @@
       "division_type": "tỉnh",
       "phone_code": 210,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Việt Trì",
           "code": 227,
@@ -23352,6 +23480,14 @@
       "phone_code": 211,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Vĩnh Yên",
           "code": 243,
           "codename": "thanh_pho_vinh_yen",
@@ -24394,6 +24530,14 @@
       "phone_code": 222,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Bắc Ninh",
           "code": 256,
           "codename": "thanh_pho_bac_ninh",
@@ -25356,6 +25500,14 @@
       "division_type": "tỉnh",
       "phone_code": 220,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Hải Dương",
           "code": 288,
@@ -27119,6 +27271,14 @@
       "phone_code": 225,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Quận Hồng Bàng",
           "code": 303,
           "codename": "quan_hong_bang",
@@ -28781,6 +28941,14 @@
       "phone_code": 221,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Hưng Yên",
           "code": 323,
           "codename": "thanh_pho_hung_yen",
@@ -30006,6 +30174,14 @@
       "division_type": "tỉnh",
       "phone_code": 227,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Thái Bình",
           "code": 336,
@@ -31908,6 +32084,14 @@
       "phone_code": 226,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Phủ Lý",
           "code": 347,
           "codename": "thanh_pho_phu_ly",
@@ -32733,6 +32917,14 @@
       "division_type": "tỉnh",
       "phone_code": 228,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Nam Định",
           "code": 356,
@@ -34415,6 +34607,14 @@
       "phone_code": 229,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Ninh Bình",
           "code": 369,
           "codename": "thanh_pho_ninh_binh",
@@ -35496,6 +35696,14 @@
       "division_type": "tỉnh",
       "phone_code": 237,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Thanh Hóa",
           "code": 380,
@@ -39662,6 +39870,14 @@
       "phone_code": 238,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Vinh",
           "code": 412,
           "codename": "thanh_pho_vinh",
@@ -43080,6 +43296,14 @@
       "phone_code": 239,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Hà Tĩnh",
           "code": 436,
           "codename": "thanh_pho_ha_tinh",
@@ -44718,6 +44942,14 @@
       "phone_code": 232,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành Phố Đồng Hới",
           "code": 450,
           "codename": "thanh_pho_dong_hoi",
@@ -45856,6 +46088,14 @@
       "phone_code": 233,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Đông Hà",
           "code": 461,
           "codename": "thanh_pho_dong_ha",
@@ -46828,6 +47068,14 @@
       "division_type": "tỉnh",
       "phone_code": 234,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Huế",
           "code": 474,
@@ -47934,6 +48182,14 @@
       "phone_code": 236,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Quận Liên Chiểu",
           "code": 490,
           "codename": "quan_lien_chieu",
@@ -48405,6 +48661,14 @@
       "division_type": "tỉnh",
       "phone_code": 235,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Tam Kỳ",
           "code": 502,
@@ -50264,6 +50528,14 @@
       "phone_code": 255,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Quảng Ngãi",
           "code": 522,
           "codename": "thanh_pho_quang_ngai",
@@ -51600,6 +51872,14 @@
       "phone_code": 256,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Quy Nhơn",
           "code": 540,
           "codename": "thanh_pho_quy_nhon",
@@ -52821,6 +53101,14 @@
       "phone_code": 257,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Tuy Hoà",
           "code": 555,
           "codename": "thanh_pho_tuy_hoa",
@@ -53680,6 +53968,14 @@
       "division_type": "tỉnh",
       "phone_code": 258,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Nha Trang",
           "code": 568,
@@ -54744,6 +55040,14 @@
       "phone_code": 259,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Phan Rang-Tháp Chàm",
           "code": 582,
           "codename": "thanh_pho_phan_rang_thap_cham",
@@ -55270,6 +55574,14 @@
       "division_type": "tỉnh",
       "phone_code": 252,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Phan Thiết",
           "code": 593,
@@ -56238,6 +56550,14 @@
       "phone_code": 260,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Kon Tum",
           "code": 608,
           "codename": "thanh_pho_kon_tum",
@@ -57050,6 +57370,14 @@
       "division_type": "tỉnh",
       "phone_code": 269,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Pleiku",
           "code": 622,
@@ -58753,6 +59081,14 @@
       "phone_code": 262,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Buôn Ma Thuột",
           "code": 643,
           "codename": "thanh_pho_buon_ma_thuot",
@@ -60185,6 +60521,14 @@
       "phone_code": 261,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Gia Nghĩa",
           "code": 660,
           "codename": "thanh_pho_gia_nghia",
@@ -60762,6 +61106,14 @@
       "division_type": "tỉnh",
       "phone_code": 263,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Đà Lạt",
           "code": 672,
@@ -61874,6 +62226,14 @@
       "phone_code": 271,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thị xã Phước Long",
           "code": 688,
           "codename": "thi_xa_phuoc_long",
@@ -62759,6 +63119,14 @@
       "phone_code": 276,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Tây Ninh",
           "code": 703,
           "codename": "thanh_pho_tay_ninh",
@@ -63507,6 +63875,14 @@
       "phone_code": 274,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Thủ Dầu Một",
           "code": 718,
           "codename": "thanh_pho_thu_dau_mot",
@@ -64233,6 +64609,14 @@
       "division_type": "tỉnh",
       "phone_code": 251,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Biên Hòa",
           "code": 731,
@@ -65532,6 +65916,14 @@
       "phone_code": 254,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Vũng Tàu",
           "code": 747,
           "codename": "thanh_pho_vung_tau",
@@ -66185,6 +66577,14 @@
       "division_type": "thành phố trung ương",
       "phone_code": 28,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Quận 1",
           "code": 760,
@@ -68577,6 +68977,14 @@
       "phone_code": 272,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Tân An",
           "code": 794,
           "codename": "thanh_pho_tan_an",
@@ -70037,6 +70445,14 @@
       "phone_code": 273,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Mỹ Tho",
           "code": 815,
           "codename": "thanh_pho_my_tho",
@@ -71349,6 +71765,14 @@
       "phone_code": 275,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Bến Tre",
           "code": 829,
           "codename": "thanh_pho_ben_tre",
@@ -72538,6 +72962,14 @@
       "phone_code": 294,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Trà Vinh",
           "code": 842,
           "codename": "thanh_pho_tra_vinh",
@@ -73370,6 +73802,14 @@
       "phone_code": 270,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Vĩnh Long",
           "code": 855,
           "codename": "thanh_pho_vinh_long",
@@ -74199,6 +74639,14 @@
       "division_type": "tỉnh",
       "phone_code": 277,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Cao Lãnh",
           "code": 866,
@@ -75317,6 +75765,14 @@
       "division_type": "tỉnh",
       "phone_code": 296,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Long Xuyên",
           "code": 883,
@@ -76518,6 +76974,14 @@
       "phone_code": 297,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Rạch Giá",
           "code": 899,
           "codename": "thanh_pho_rach_gia",
@@ -77670,6 +78134,14 @@
       "phone_code": 292,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Quận Ninh Kiều",
           "code": 916,
           "codename": "quan_ninh_kieu",
@@ -78341,6 +78813,14 @@
       "phone_code": 293,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Vị Thanh",
           "code": 930,
           "codename": "thanh_pho_vi_thanh",
@@ -78946,6 +79426,14 @@
       "division_type": "tỉnh",
       "phone_code": 299,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Sóc Trăng",
           "code": 941,
@@ -79818,6 +80306,14 @@
       "phone_code": 291,
       "districts": [
         {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
+        {
           "name": "Thành phố Bạc Liêu",
           "code": 954,
           "codename": "thanh_pho_bac_lieu",
@@ -80337,6 +80833,14 @@
       "division_type": "tỉnh",
       "phone_code": 290,
       "districts": [
+        {
+          "name": "Tất cả",
+          "code": 0,
+          "codename": "tat_ca",
+          "division_type": "none",
+          "short_codename": "none",
+          "wards":[]
+        },
         {
           "name": "Thành phố Cà Mau",
           "code": 964,

@@ -101,29 +101,40 @@
         <ul class="sidebar-menu">
             <li class="treeview">
                 <a href="<?php echo WEB_ROOT;?>">
-                    <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>View Page</span>
+                    <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>Xem trang web</span>
                 </a>
             </li>
             <li class="treeview"><a href="<?php echo WEB_ROOT;?>/admin/">
-                <i class="icon icon icon-package blue-text s-18"></i>
-                <span>Products</span>
+                <i class="icon icon icon-package blue-text s-18"></i>Nhà <i class="icon icon-angle-left s-18 pull-right"></i>
             </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo WEB_ROOT;?>/admin/"><i class="icon icon-circle-o"></i>All Products</a>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/"><i class="icon icon-circle-o"></i>Tất cả nhà</a>
                     </li>
-                    <li><a href="<?php echo WEB_ROOT;?>/admin/addProduct/"><i class="icon icon-add"></i>Add New </a>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/addProduct/"><i class="icon icon-add"></i>Thêm nhà mới</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="icon icon icon-house blue-text s-18"></i>
+                    Chung cư <i class="icon icon-angle-left s-18 pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/getListApart/"><i class="icon icon-circle-o"></i>Chung cư</a>
+                    </li>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/addApart/"><i class="icon icon-add"></i>Thêm Chung cư </a>
                     </li>
                 </ul>
             </li>
             <?php
                 if($_SESSION['role'] == '1'){
                     echo '
-                        <li class="treeview"><a href="#"><i class="icon icon-account_box light-green-text s-18"></i>Users<i
+                        <li class="treeview"><a href="#"><i class="icon icon-account_box light-green-text s-18"></i>Người dùng<i
                         class="icon icon-angle-left s-18 pull-right"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="'.WEB_ROOT.'/admin/listUser/"><i class="icon icon-circle-o"></i>All Users</a>
+                                <li><a href="'.WEB_ROOT.'/admin/listUser/"><i class="icon icon-circle-o"></i>Tất cả người dùng</a>
                                 </li>
-                                <li><a href="'.WEB_ROOT.'/admin/addUser/"><i class="icon icon-add"></i>Add User</a>
+                                <li><a href="'.WEB_ROOT.'/admin/addUser/"><i class="icon icon-add"></i>Thêm người dùng mới</a>
                                 </li>
                             </ul>
                         </li>
@@ -133,12 +144,12 @@
                             <span>Chờ duyệt</span>
                         </a>
 
-                        <li class="treeview"><a href="#"><i class="icon icon-documents3 light-green-text s-18"></i>News<i
+                        <li class="treeview"><a href="#"><i class="icon icon-documents3 light-green-text s-18"></i>Tin tức<i
                         class="icon icon-angle-left s-18 pull-right"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="'.WEB_ROOT.'/admin/listNews/"><i class="icon icon-circle-o"></i>All News</a>
+                                <li><a href="'.WEB_ROOT.'/admin/listNews/"><i class="icon icon-circle-o"></i>Tất cả tin tức</a>
                                 </li>
-                                <li><a href="'.WEB_ROOT.'/admin/addNews/"><i class="icon icon-add"></i>Add News</a>
+                                <li><a href="'.WEB_ROOT.'/admin/addNews/"><i class="icon icon-add"></i>Thêm tin tức mới</a>
                                 </li>
                             </ul>
                         </li>
@@ -213,7 +224,7 @@
                 <i class="icon-more_vert "></i>
             </a>
         </li>
-        <a href="<?php echo WEB_ROOT;?>/admin/logout/" style="margin: auto;">logout</a>
+        <a href="<?php echo WEB_ROOT;?>/admin/logout/" style="margin: auto;">Đăng xuất</a>
     </ul>
 </div>
 </div>
@@ -229,13 +240,14 @@
                                     <table class="table table-striped table-hover r-0">
                                         <thead>
                                         <tr class="no-b">
-                                            <th>TÊN USER</th>
-                                            <th>PHONE</th>
-                                            <th>USERNAME</th>
+                                            <th>TÊN NGƯỜI DÙNG</th>
+                                            <th>SỐ ĐIỆN THOẠI</th>
+                                            <th>TÊN ĐĂNG NHẬP</th>
                                             <th>EMAIL</th>
                                             <th>TỈNH</th>
                                             <th>HUYỆN</th>
-                                            <th>ROLE</th>
+                                            <th>VAI TRÒ</th>
+                                            <th>XÓA</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -250,6 +262,9 @@
                                                         <td>'.$value['ad_province'].'</td>
                                                         <td>'.$value['ad_district'].'</td>
                                                         <td>'.$value['role'].'</td>
+                                                        <td>
+                                                            <a href="'.WEB_ROOT.'/admin/deleteAdmin/?ad_id='.$value['ad_id'].'" onclick="return confirm(\'BẠN CÓ CHẮC MUỐN XÓA ?\')"><span class="r-3 badge badge-danger">xóa</span></a>
+                                                        </td>
                                                     </tr>
                                                     ';
                                                 }

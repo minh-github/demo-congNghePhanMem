@@ -94,32 +94,42 @@
             <img src="<?php echo WEB_ROOT;?>/public/admin/img/basic/logo-white.png" alt="">
         </div>
         <ul class="sidebar-menu">
-            <li class="header"><strong>MAIN NAVIGATION</strong></li>
+            <li class="header"><strong>QUẢN LÝ</strong></li>
             <li class="treeview"><a href="<?php echo WEB_ROOT;?>">
-                <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>View Page</span>
+                <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>Xem trang web</span>
             </a>
             </li>
             <li class="treeview"><a href="#">
-                <i class="icon icon icon-package blue-text s-18"></i>
-                <span>Products</span>
+                <i class="icon icon icon-package blue-text s-18"></i>Nhà <i class="icon icon-angle-left s-18 pull-right"></i>
             </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo WEB_ROOT;?>/admin/"><i class="icon icon-circle-o"></i>All Products</a>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/"><i class="icon icon-circle-o"></i>Tất cả nhà</a>
                     </li>
-                    <li><a href="<?php echo WEB_ROOT;?>/admin/addProduct/"><i class="icon icon-add"></i>Add New </a>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/addProduct/"><i class="icon icon-add"></i>Thêm nhà </a>
                     </li>
                 </ul>
             </li>
-
+            <li class="treeview">
+                <a href="#">
+                    <i class="icon icon icon-house blue-text s-18"></i>
+                    Chung cư <i class="icon icon-angle-left s-18 pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/getListApart/"><i class="icon icon-circle-o"></i>Chung cư</a>
+                    </li>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/addApart/"><i class="icon icon-add"></i>Thêm Chung cư </a>
+                    </li>
+                </ul>
+            </li>
             <?php
                 if($_SESSION['role'] == '1'){
                     echo '
-                        <li class="treeview"><a href="#"><i class="icon icon-account_box light-green-text s-18"></i>Users<i
+                        <li class="treeview"><a href="#"><i class="icon icon-account_box light-green-text s-18"></i>Người dùng<i
                         class="icon icon-angle-left s-18 pull-right"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="'.WEB_ROOT.'/admin/listUser/"><i class="icon icon-circle-o"></i>All Users</a>
+                                <li><a href="'.WEB_ROOT.'/admin/listUser/"><i class="icon icon-circle-o"></i>Tất cả người dùng</a>
                                 </li>
-                                <li><a href="'.WEB_ROOT.'/admin/addUser/"><i class="icon icon-add"></i>Add User</a>
+                                <li><a href="'.WEB_ROOT.'/admin/addUser/"><i class="icon icon-add"></i>Thêm người dùng</a>
                                 </li>
                             </ul>
                         </li>
@@ -129,12 +139,12 @@
                             <span>Chờ duyệt</span>
                         </a>
 
-                        <li class="treeview"><a href="#"><i class="icon icon-documents3 light-green-text s-18"></i>News<i
+                        <li class="treeview"><a href="#"><i class="icon icon-documents3 light-green-text s-18"></i>Tin tức<i
                         class="icon icon-angle-left s-18 pull-right"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="'.WEB_ROOT.'/admin/listNews/"><i class="icon icon-circle-o"></i>All News</a>
+                                <li><a href="'.WEB_ROOT.'/admin/listNews/"><i class="icon icon-circle-o"></i>Tất cả tin tức</a>
                                 </li>
-                                <li><a href="'.WEB_ROOT.'/admin/addNews/"><i class="icon icon-add"></i>Add News</a>
+                                <li><a href="'.WEB_ROOT.'/admin/addNews/"><i class="icon icon-add"></i>Thêm tin tức mới</a>
                                 </li>
                             </ul>
                         </li>
@@ -301,7 +311,7 @@
                 <i class="icon-more_vert "></i>
             </a>
         </li>
-        <a href="<?php echo WEB_ROOT;?>/admin/logout/" style="margin: auto;">logout</a>
+        <a href="<?php echo WEB_ROOT;?>/admin/logout/" style="margin: auto;">Đăng xuất</a>
     </ul>
 </div>
 </div>
@@ -319,20 +329,15 @@
                                         <tr class="no-b">
                                             <th>BẤT ĐỘNG SẢN</th>
                                             <th>THỂ LOẠI</th>
-                                            <th>TÊN</th>
-                                            <th>GIÁ</th>
-                                            <th>PHONE</th>
+                                            <th>NGƯỜI ĐĂNG</th>
                                             <th>EMAIL</th>
-                                            <th>TRẠNG THÁI</th>
-                                            <th>TỈNH</th>
-                                            <th>HUYỆN</th>
-                                            <th>ROLE</th>
+                                            <th>VAI TRÒ</th>
                                         </tr>
                                         </thead>
                                         <tbody>
 
                                         <?php                             
-                                            foreach ($data['sub_content']['list'] as $key => $value) {
+                                            foreach ($data['sub_content']['listHouse'] as $key => $value) {
                                                 $thumb = explode(" | ", $value['thumb']);
                                                 echo '
                                             <tr>
@@ -342,27 +347,47 @@
                                                 </div>
                                                 <div>
                                                     <div >
-                                                        <strong>'.$value['title'].'</strong>
+                                                        <div style="white-space: nowrap;width:300px; overflow: hidden; text-overflow: ellipsis;">'.$value['title'].'</div>
                                                     </div>
+                                                    <td>Nhà</td>
                                                 </div>
                                             </td>
-                                            <td>'.$value['type'].'</td>
-                                            <td>205</td>
-                                            <td>'.$value['price'].'$</td>
-                                            <td>'.$value['ad_phonenum'].'</td>
+                                            <td>'.$value['ad_name'].'</td>
                                             <td><span class="s-12">'.$value['ad_email'].'</span></td>
-                                            <td><span class="r-3 badge badge-success">Chưa bán</span></td>
-                                            <td>'.$value['province'].'</td>
-                                            <td>'.$value['district'].'</td>
                                             <td>
                                                 <a href="'.WEB_ROOT.'/admin/detail/?h_id='.$value['h_id'].'"><span class="r-3 badge badge-warning">Xem</span></a>
                                                 <a href="'.WEB_ROOT.'/admin/active/?h_id='.$value['h_id'].'"><span class="r-3 badge badge-success">Duyệt</span></a>
-                                                <a href="'.WEB_ROOT.'/admin/deleteProduct/?h_id='.$value['h_id'].'"><span class="r-3 badge badge-danger">Xóa</span></a>
+                                                <a href="'.WEB_ROOT.'/admin/deleteProduct/?h_id='.$value['h_id'].'"onclick="return confirm(\'BẠN CÓ CHẮC MUỐN XÓA ?\')"><span class="r-3 badge badge-danger">Xóa</span></a>
                                             </td>
                                         </tr>
                                         ';
                                         }
                                         
+                                        foreach ($data['sub_content']['listApart'] as $key => $value) {
+                                                $thumb = explode(" | ", $value['thumb']);
+                                                echo '
+                                            <tr>
+                                            <td class="title">
+                                                <div class="thumb mr-3 mt-1">
+                                                    <img src="'.$thumb[0].'" alt="">
+                                                </div>
+                                                <div>
+                                                    <div >
+                                                    <div style="white-space: nowrap;width:300px; overflow: hidden; text-overflow: ellipsis;">'.$value['title'].'</div>
+                                                    </div>
+                                                    <td>Chung cư</td>
+                                                </div>
+                                            </td>
+                                            <td>'.$value['ad_name'].'</td>
+                                            <td><span class="s-12">'.$value['ad_email'].'</span></td>
+                                            <td>
+                                                <a href="'.WEB_ROOT.'/admin/apartDetail/?a_id='.$value['a_id'].'"><span class="r-3 badge badge-warning">Xem</span></a>
+                                                <a href="'.WEB_ROOT.'/admin/active/?a_id='.$value['a_id'].'"><span class="r-3 badge badge-success">Duyệt</span></a>
+                                                <a href="'.WEB_ROOT.'/admin/deleteApart/?a_id='.$value['a_id'].'"><span class="r-3 badge badge-danger">Xóa</span></a>
+                                            </td>
+                                        </tr>
+                                        ';
+                                        }
                                         ?>
                                         </tbody>
                                     </table>

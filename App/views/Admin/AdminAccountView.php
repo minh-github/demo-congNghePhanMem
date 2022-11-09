@@ -6,6 +6,7 @@
     foreach($data['sub_content']['admin'] as $key => $value){
         $avarta = $value['ad_image'];
         $ad_name = $value['ad_name'];
+        $ad_username = $value['ad_username'];
         $ad_email = $value['ad_email'];
         $ad_phone = $value['ad_phonenum'];
         $ad_district = $value['ad_district'];
@@ -95,25 +96,37 @@
 </div>
 <div id="app">
 <aside class="main-sidebar fixed offcanvas shadow bg-primary text-white no-b theme-dark">
-    <section class="sidebar">
+<section class="sidebar">
         <div class="w-80px mt-3 mb-3 ml-3">
             <img src="<?php echo WEB_ROOT;?>/public/admin/img/basic/logo-white.png" alt="">
         </div>
         <ul class="sidebar-menu">
-            <li class="header"><strong>MAIN NAVIGATION</strong></li>
+            <li class="header"><strong>QUẢN LÝ</strong></li>
             <li class="treeview">
                 <a href="<?php echo WEB_ROOT;?>">
-                    <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>View Page</span>
+                    <i class="icon icon-sailing-boat-water purple-text s-18"></i> <span>Xem trang web</span>
                 </a>
             </li>
-            <li class="treeview"><a href="#">
-                <i class="icon icon icon-package blue-text s-18"></i>
-                <span>Products</span>
-            </a>
+            <li class="treeview">
+                <a href="#">
+                    <i class="icon icon icon-package blue-text s-18"></i>Nhà <i class="icon icon-angle-left s-18 pull-right"></i>
+                </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo WEB_ROOT;?>/admin/"><i class="icon icon-circle-o"></i>All Products</a>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/"><i class="icon icon-circle-o"></i>Tất cả nhà</a>
                     </li>
-                    <li><a href="<?php echo WEB_ROOT;?>/admin/addProduct/"><i class="icon icon-add"></i>Add New </a>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/addProduct/"><i class="icon icon-add"></i>Thêm nhà </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="icon icon icon-house blue-text s-18"></i>
+                    Chung cư <i class="icon icon-angle-left s-18 pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/getListApart/"><i class="icon icon-circle-o"></i>Chung cư</a>
+                    </li>
+                    <li><a href="<?php echo WEB_ROOT;?>/admin/addApart/"><i class="icon icon-add"></i>Thêm Chung cư </a>
                     </li>
                 </ul>
             </li>
@@ -121,12 +134,12 @@
             <?php
                 if($_SESSION['role'] == '1'){
                     echo '
-                        <li class="treeview"><a href="#"><i class="icon icon-account_box light-green-text s-18"></i>Users<i
+                        <li class="treeview"><a href="#"><i class="icon icon-account_box light-green-text s-18"></i>Người dùng<i
                         class="icon icon-angle-left s-18 pull-right"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="'.WEB_ROOT.'/admin/listUser/"><i class="icon icon-circle-o"></i>All Users</a>
+                                <li><a href="'.WEB_ROOT.'/admin/listUser/"><i class="icon icon-circle-o"></i>Tất cả người dùng</a>
                                 </li>
-                                <li><a href="'.WEB_ROOT.'/admin/addUser/"><i class="icon icon-add"></i>Add User</a>
+                                <li><a href="'.WEB_ROOT.'/admin/addUser/"><i class="icon icon-add"></i>Thêm người dùng mới</a>
                                 </li>
                             </ul>
                         </li>
@@ -136,12 +149,12 @@
                             <span>Chờ duyệt</span>
                         </a>
 
-                        <li class="treeview"><a href="#"><i class="icon icon-documents3 light-green-text s-18"></i>News<i
+                        <li class="treeview"><a href="#"><i class="icon icon-documents3 light-green-text s-18"></i>Tin tức<i
                         class="icon icon-angle-left s-18 pull-right"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="'.WEB_ROOT.'/admin/listNews/"><i class="icon icon-circle-o"></i>All News</a>
+                                <li><a href="'.WEB_ROOT.'/admin/listNews/"><i class="icon icon-circle-o"></i>Tất cả tin tức</a>
                                 </li>
-                                <li><a href="'.WEB_ROOT.'/admin/addNews/"><i class="icon icon-add"></i>Add News</a>
+                                <li><a href="'.WEB_ROOT.'/admin/addNews/"><i class="icon icon-add"></i>Thêm tin tức mới</a>
                                 </li>
                             </ul>
                         </li>
@@ -336,7 +349,7 @@
                           <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"><i class="icon icon-home2"></i>Home</a>
                       </li>
                       <li>
-                          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="icon icon-cog"></i>Edit Profile</a>
+                          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="icon icon-cog"></i>Chỉnh sửa tài khoản</a>
                       </li>
                   </ul>
               </div>
@@ -352,9 +365,9 @@
                        <div class="col-md-3">
                            <div class="card ">
                                <ul class="list-group list-group-flush">
-                                   <li class="list-group-item"><i class="icon icon-mobile text-primary"></i><strong class="s-12">Phone</strong> <span class="float-right s-12"><?php echo $ad_phone;?></span></li>
+                                   <li class="list-group-item"><i class="icon icon-mobile text-primary"></i><strong class="s-12">SĐT</strong> <span class="float-right s-12"><?php echo $ad_phone;?></span></li>
                                    <li class="list-group-item"><i class="icon icon-mail text-success"></i><strong class="s-12">Email</strong> <span class="float-right s-12"><?php echo $ad_email;?></span></li>
-                                   <li class="list-group-item"><i class="icon icon-address-card-o text-warning"></i><strong class="s-12">Address</strong> <span class="float-right s-12"><?php echo $ad_district;?>, <?php echo $ad_province;?></span></li>
+                                   <li class="list-group-item"><i class="icon icon-address-card-o text-warning"></i><strong class="s-12">Địa chỉ</strong> <span class="float-right s-12"><?php echo $ad_district;?>, <?php echo $ad_province;?></span></li>
                                </ul>
                            </div>
                        </div>
@@ -417,8 +430,14 @@
                                                                     </tr>
                                                                     </thead>
                                                                     <tbody>
-
-                                                                    <?php                             
+                                                                    <?php
+                                                                    if(empty($data['sub_content']['list'])){
+                                                                        echo'
+                                                                        <td>Danh sách trống</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        ';
+                                                                    }else{                            
                                                                         foreach ($data['sub_content']['list'] as $key => $value) {
                                                                             $thumb = explode(" | ", $value['thumb']);
                                                                             echo '
@@ -437,7 +456,7 @@
                                                                         <td>'.substr($value['timePost'],0,10).'</td>
                                                                     </tr>
                                                                     ';
-                                                                    }                                  
+                                                                    }}                                  
                                                                     ?>
                                                                     </tbody>
                                                                 </table>
@@ -456,54 +475,37 @@
                    </div>
                </div>
                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                   <form class="form-horizontal">
+                   <form class="form-horizontal" action="/admin/updateAccount/" method="post">
                        <div class="form-group">
-                           <label for="inputName" class="col-sm-2 control-label">Name</label>
-
+                           <label for="inputName" class="col-sm-2 control-label">Tên đăng nhập</label>
                            <div class="col-sm-10">
-                               <input class="form-control" id="inputName" placeholder="Name" type="email">
+                               <input class="form-control" id="inputName" name="username" value="<?=$ad_username?>">
                            </div>
                        </div>
                        <div class="form-group">
                            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
 
                            <div class="col-sm-10">
-                               <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                               <input class="form-control" id="inputEmail" name="email" type="email" value="<?=$ad_email?>">
                            </div>
                        </div>
                        <div class="form-group">
-                           <label for="inputName" class="col-sm-2 control-label">Name</label>
+                           <label for="inputName" class="col-sm-2 control-label">Họ Tên</label>
 
                            <div class="col-sm-10">
-                               <input class="form-control" id="inputName" placeholder="Name" type="text">
+                               <input class="form-control" id="inputName" name="name" type="text" value="<?=$ad_name?>">
                            </div>
                        </div>
                        <div class="form-group">
-                           <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
+                           <label for="inputExperience" class="col-sm-2 control-label">Mật khẩu</label>
 
                            <div class="col-sm-10">
-                               <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                           </div>
-                       </div>
-                       <div class="form-group">
-                           <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
-
-                           <div class="col-sm-10">
-                               <input class="form-control" id="inputSkills" placeholder="Skills" type="text">
+                                <input class="form-control" id="inputName" name="password" type="password">
                            </div>
                        </div>
                        <div class="form-group">
                            <div class="col-sm-offset-2 col-sm-10">
-                               <div class="checkbox">
-                                   <label>
-                                       <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                                   </label>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="form-group">
-                           <div class="col-sm-offset-2 col-sm-10">
-                               <button type="submit" class="btn btn-danger">Submit</button>
+                               <button type="submit" class="btn btn-danger">Update</button>
                            </div>
                        </div>
                    </form>

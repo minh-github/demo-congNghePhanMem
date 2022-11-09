@@ -40,7 +40,6 @@
         $title = $value['title'];
         $description = $value['description'];
         $thumbs = explode(" | ", $value['thumb']);
-        $images = explode(" | ", $value['images']);
         $content = $value['content'];
         $timePost = $value['posttime'];
         $author = $value['ad_name'];

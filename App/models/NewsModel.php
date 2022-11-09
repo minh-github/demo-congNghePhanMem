@@ -13,7 +13,6 @@ class NewsModel extends BaseModel{
     }
 
     public function getLenght(){
-
         $sql = "SELECT * From news";
         return $this->db->query($sql);
     }
@@ -21,6 +20,24 @@ class NewsModel extends BaseModel{
     public function detail($n_id)
     {
         $sql = "SELECT news.*, admin.*  FROM news INNER JOIN admin ON news.ad_id = admin.ad_id WHERE news.n_id = $n_id";
+        return $this->db->query($sql);
+    }
+
+    public function getByTime()
+    {
+        $sql = "SELECT house.*, admin.* FROM house INNER JOIN admin ON house.ad_id = admin.ad_id ORDER BY house.timePost DESC LIMIT 0,3";
+        return $this->db->query($sql);
+    }
+
+    public function getNews()
+    {
+        $sql = "SELECT news.*, admin.* FROM news INNER JOIN admin ON news.ad_id = admin.ad_id ORDER BY news.posttime DESC LIMIT 0,3";
+        return $this->db->query($sql);
+    }
+
+    public function getItem($keyWord)
+    {
+        $sql = "SELECT news.*, admin.* FROM news INNER JOIN admin ON news.ad_id = admin.ad_id WHERE news.title LIKE '%$keyWord%' OR news.description LIKE '%$keyWord%'";
         return $this->db->query($sql);
     }
 }
